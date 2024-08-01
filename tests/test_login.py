@@ -26,7 +26,8 @@ def test_login_uncessfully(page):
         ("expected_message", "username", "password"),
         [
             ("You logged into a secure area!", "tomsmith", "SuperSecretPassword!"),
-            ("Your username is invalid!", "tomsmith1", "SuperSecretPassword!")
+            ("Your username is invalid!", "tomsmith1", "SuperSecretPassword!"),
+            ("Your password is invalid!", "tomsmith", "SuperSecretPassword1!")            
         ]
 )
 def test_login(expected_message, username, password, page):
